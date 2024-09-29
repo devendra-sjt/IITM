@@ -63,3 +63,17 @@ print(x)
 
 # Q - If the code throws an error, in which line will it occur? Enter an integer between 1 and 7, both endpoints included.
 # Ans - 7
+
+
+# Caeser Cipher
+
+alpha = "abcdefghijklmnopqrstuvwxyz"
+name = "Devendra"
+name = name.lower()
+hash = ""
+i,k = 0,1
+while i < len(name):
+    hash = hash + alpha[(alpha.index(name[i])+k) % 26]
+    i = i + 1
+
+print(hash)
