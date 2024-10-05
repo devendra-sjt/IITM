@@ -1,85 +1,61 @@
-# # # a,b,c are three random distinct integers
-# # a = 10
-# # b = 20
-# # c = 30
-# # x, y, z = a, b, c
-# # x = y = z
-# # print(x==y==z)
-# # print(x==y==z==c)
-# # print(x==y==z==a)
-# # print(x==y==z==b)
-
-
-# x = 7.658
-# print(int(x))
-# print(int(-x))
-
-
-
-# # Block 1
-# flag = True
-# if flag == True:
-#     print('works')
-
-# # Block 2
-# flag = True
-# if flag:
-#     print('works')
-
-# # Are the two blocks equivalent?
-# # Yes, Then How?
-# # Yes, because the value of flag is True in both the blocks. The first block checks if the value of flag is True, and the second block checks if the value of flag is True. Both the blocks are equivalent.
-
-# a,b,c,d = input()
-# print(a)
-# print(b)
-# print(c)
-# print(d)
-
-
-
-
-# # Consider the following code-block. E_1, E_2 and E_3 are all Boolean variables that have already been defined. x is a variable that has NOT been defined before.
-
-# '''
-# Added Empty Variables to make the code run without any error.
-# '''
-# E_1 = ... 
-# E_2 = ...
-# E_3 = ...
-
-# if E_1:
-#     x = 1
-# if E_2:
-#     x = 2
-# if E_3:
-#     x = 3
-# print(x)
-
-
-# # Q - When will this code throw an error?
-# # Ans - When all three Boolean variables are False.
-
-
-# # Q - If the code throws an error, in which line will it occur? Enter an integer between 1 and 7, both endpoints included.
-# # Ans - 7
-
-
-# # Caeser Cipher
-
-# alpha = "abcdefghijklmnopqrstuvwxyz"
-# name = "Devendra"
-# name = name.lower()
-# hash = ""
-# i,k = 0,1
-# while i < len(name):
-#     hash = hash + alpha[(alpha.index(name[i])+k) % 26]
-#     i = i + 1
-# print(hash)
-
-
 
 # Week 2 Graded Programming Assignment 3 - "Very Good!!!"
+# The Question is as follows:
+'''
+GrPA 3 - Basic conditional patterns - GRADED
+This problem gives you exposure to different use cases of if ... elif and else conditional structues.
+
+Part 1 - Only if
+
+Part 2 - if ... else
+
+Part 3 - if ... elif
+
+Template Code(Click to Expand)
+# part 1 - basic if
+
+new_word = word # donot remove this line
+
+# remove the "ing" suffix from `new_word` if it is there
+if ... :
+    ...
+
+# add the suffix "ing" to `new_word` if `continuous_tense` is True
+# write the whole if else block here
+
+# part 2 - If else pattern
+
+# age_group:str should be "Adult" or "Child" based on the age. assume age greater than or equal to 18 is adult.
+if ...:
+    ...
+else:
+    ...
+
+# applicant_type:str should be age goup with the member status like "Adult Member" or "Child Non-member"
+# write the whole if else block
+
+# part 3 if ... elif .. else
+
+# based on the value of `color_code` assign the `color` value in lower case and "black" if `color_code` is none of R, B and G
+
+if ...
+elif ...:
+        ...
+elif ...:
+    ...
+else:
+    ...
+
+is_time_valid = ... # bool: True if time is valid (should be ranging from 1 - 12 both including) else False 
+
+# time_in_hrs:int should have the time in 24 hrs format . Try to do this in a single expression
+time_in_hrs = ...
+
+# time_of_day:str should have the time of the day as Morning, etc.. use "Invalid" if not withing the acceptable range
+
+# write your code here
+'''
+
 
 
 # part 1 - If pattern
@@ -175,15 +151,3 @@ else:
 # print(is_time_valid)
 # print(time_in_hrs)
 # print(time_of_day)
-
-
-
-
-
-
-
-
-# Week 2 Graded Programming Assignment 4
-
-
-
