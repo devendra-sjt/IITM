@@ -9,24 +9,24 @@
 
 
 
-n = input("Enter a number: ").strip()
+# n = input("Enter a number: ").strip()
 
-# Handle empty input
-if not n:
-    print("No. of digits: 0")
-    exit()
+# # Handle empty input
+# if not n:
+#     print("No. of digits: 0")
+#     exit()
 
-# Handle negative numbers
-is_negative = n[0] == '-'
-if is_negative:
-    n = n[1:]
+# # Handle negative numbers
+# is_negative = n[0] == '-'
+# if is_negative:
+#     n = n[1:]
 
-# Remove leading zeros
-n = n.lstrip('0')
+# # Remove leading zeros
+# n = n.lstrip('0')
 
-# Handle the case where the number is zero
-if not n:
-    n = '0'
-count = len(n)
+# # Handle the case where the number is zero
+# if not n:
+#     n = '0'
+# count = len(n)
 
-print(f"No. of digits: {count}")
+# print(f"No. of digits: {count}")
