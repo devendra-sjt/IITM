@@ -64,8 +64,10 @@ elif task == "reverse_sum_palindrome":
 
 elif task == "double_string":
     while True:
-        line = ""
-        
+        line = input()
+        if line == "":
+            break
+        print(line*2)
 
 elif task == "odd_char":
     ...
