@@ -27,7 +27,7 @@ elif task == "total_price":
         ... # accumulate the total price
     print(total_price)
 elif task == "only_ed_or_ing":
-    ...
+    
 
 elif task == "reverse_sum_palindrome":
     ...
