@@ -2,10 +2,10 @@
 # from os import link
 
 
-# with open(__file__) as f:
-#     content = f.read().split("# <eoi>")[2]
-# if "for " in content:
-#     print("You should not use for loop or the word for anywhere in this exercise")
+with open(__file__) as f:
+    content = f.read().split("# <eoi>")[2]
+if "for " in content:
+    print("You should not use for loop or the word for anywhere in this exercise")
 
 # This is the first line of the exercise
 task = input()
@@ -62,22 +62,35 @@ elif task == "reverse_sum_palindrome":
 # odd_char: Continuously read strings from standard input until you encounter a string ending with a "."(include that string with the "." in the output).
 #  Extract characters at odd positions (starting from 1) of each line, and print the results in a single line separated by spaces.
 
+
 elif task == "double_string":
     while True:
-        line = input()
-        if line == "":
+        string = input()
+        if string == "":
             break
-        print(line*2)
+        print(string*2)
 
 elif task == "odd_char":
-    ...
+    s = ""
+    while True:
+        string = input()
+        s += "".join(string[1::2]) + " "
+        if string.endswith("."):
+            s = s.strip()
+            break
+    print(s)
 
 # Filter and Map - Applying an operation to selected items
 # only_even_squares: Continuously read numbers from standard input until "NAN" is encountered. 
 # Print the square of each number only if it is even.
 
 elif task == "only_even_squares":
-    ...
+    while True:
+        num = input()
+        if num == "NAN":
+            break
+        if int(num) % 2 == 0:
+            print(int(num)**2)     
 
 # Filter and Accumulate - Accumulating a result with selected items
 # only_odd_lines: Continuously read lines from standard input until "END"(not included in the output) is encountered. 
@@ -85,4 +98,19 @@ elif task == "only_even_squares":
 # and print the result which will be the odd lines in reverse order.
 
 elif task == "only_odd_lines":
-    ...
+    s = ""
+    while True:
+        string = input()
+        if string == "END":
+            break
+        s += string + "\n"
+    s = s.strip().split("\n")
+    i = 0
+    s_final = []
+    while i<len(s):
+        s_final.append(s[i])
+        i += 2
+    j = 1
+    while j <= len(s_final):
+        print(s_final[-j])
+        j += 1
